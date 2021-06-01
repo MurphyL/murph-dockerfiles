@@ -17,6 +17,6 @@ alpine:
 nodejs:
 	$(BUILD) -t murphyl/$@ $(WORK_DIR)
 	
-push: 
+deploy: 
 	docker tag $(UNIQUE) $(UNIQUE)
 	docker push $(UNIQUE)
