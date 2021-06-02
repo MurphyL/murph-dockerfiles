@@ -17,7 +17,7 @@ alpine:
 nodejs:
 	$(BUILD) -t murphyl/$@ $(WORK_DIR)
 
-restify:
+json-restify:
 	$(BUILD) -t murphyl/$@ $(WORK_DIR)
 
 deploy: 

@@ -14,6 +14,10 @@ const meta = database(path.join(process.cwd(), 'meta.json'));
 
 const app = express();
 
+app.use(express.json());
+
+app.use('/editor', express.static('../adminer/public'));
+
 const port = process.env.SERVER_PORT || 5000;
 
 app.get('/', (req, res) => {
