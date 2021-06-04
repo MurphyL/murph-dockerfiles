@@ -1,3 +1,5 @@
+// https://json-editor.github.io/json-editor/
+
 /**
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(location.search);
