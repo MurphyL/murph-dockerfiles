@@ -20,6 +20,9 @@ nodejs:
 json-restify:
 	$(BUILD) -t murphyl/$@ $(WORK_DIR)
 
+serve-json-restify:
+	docker run --rm -it --name json-restify -p 5000:5000 -v $(CURDIR)/src/json-restify/workspace:/usr/murph -v E:/x.json:/usr/murph/editor/x.json murphyl/nodejs npm run start
+
 deploy: 
 	docker tag $(UNIQUE) $(UNIQUE)
-	docker push $(UNIQUE)
+	ocker push $(UNIQUE)

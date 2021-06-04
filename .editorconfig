@@ -1,0 +1,12 @@
+root = true
+
+# Tab indentation (no size specified)
+[makefile]
+indent_style = tab
+
+# Matches the exact files either package.json or .travis.yml
+[{*.json,.*.js}]
+charset = utf-8
+indent_size = 4
+indent_style = space
+
