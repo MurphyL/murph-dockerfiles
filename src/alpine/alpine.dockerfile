@@ -2,7 +2,6 @@ FROM alpine:latest
 
 WORKDIR "/usr/murph"
 
-ARG JAVA_VERSION=8
 ARG ALPINE_SOURCE="dl-cdn.alpinelinux.org"
 ARG ALPINE_MIRROR="mirrors.tuna.tsinghua.edu.cn"
 
