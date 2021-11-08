@@ -12,7 +12,7 @@ java: jdk
 openjdk: jdk
 
 alpine:
-	$(BUILD) -t murphyl/alpine $(WORK_DIR)
+	$(BUILD) -t murphyl/$@ $(WORK_DIR)
 
 nodejs:
 	$(BUILD) -t murphyl/$@ $(WORK_DIR)
@@ -22,4 +22,4 @@ json-restify:
 
 deploy: 
 	docker tag $(UNIQUE) $(UNIQUE)
-	ocker push $(UNIQUE)
+	docker push $(UNIQUE)

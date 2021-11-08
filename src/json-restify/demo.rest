@@ -1,0 +1,8 @@
+### Hello
+POST http://127.0.0.1:5000/posts
+Content-Type: application/json
+
+{
+    "title": "json-server1",
+    "author": "typicode2"
+}
