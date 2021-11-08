@@ -2,9 +2,15 @@ FROM murphyl/nodejs:latest
 
 WORKDIR "/usr/murph"
 
-COPY ./workspace/ ./
+COPY ./public/ ./public/
+COPY ./config/ ./
 
-CMD ["npm", "run", "start"]
+
+# RUN npm install -g json-server
+# CMD ["json-server", "--host", "0.0.0.0", "db.json", "--read-only", "--middlewares", "middleware.js"]
+
+RUN npm i serve-json -g
+CMD ["serve-json", "db.json"]
 
 # npm install json-server --save-dev
 
