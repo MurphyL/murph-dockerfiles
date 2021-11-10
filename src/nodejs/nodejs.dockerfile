@@ -11,4 +11,4 @@ ENV CHOKIDAR_USEPOLLING true
 RUN sed -i "s/${ALPINE_SOURCE}/${ALPINE_MIRROR}/g" /etc/apk/repositories; \
 	apk update && apk add --no-cache ca-certificates tzdata; 
 
-ENTRYPOINT /bin/sh
+SHELL [ "/bin/sh" ]
