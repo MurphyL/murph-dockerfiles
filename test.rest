@@ -1,0 +1,32 @@
+### PING
+GET http://127.0.0.1:8080/ping
+
+
+####
+PUT http://127.0.0.1:8080/
+Authorization: Basic admin:secret
+
+####
+PUT http://127.0.0.1:8080/user-sss
+Authorization: Basic admin:secret
+Content-Type: application/json
+
+{ "descr": "just a test db" }
+
+####
+POST http://127.0.0.1:8080/hello
+Authorization: Basic admin:secret
+Content-Type: application/json
+
+{"a":1}
+
+
+####
+GET http://127.0.0.1:8080/hello
+Authorization: Basic admin:secret
+
+
+#### 
+GET http://127.0.0.1:8080/coll?page=1&pagesize=5
+Authorization: Basic admin:secret
+
